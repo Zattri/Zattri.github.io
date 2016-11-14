@@ -16,12 +16,137 @@ margin: 0;
 padding: 0;
 }
 
+pre {
+    overflow-x: auto;
+    overflow-y: auto;
+    width: 50%;
+    height: 35%;
+    border-top: 1px solid #c6c9ce;
+    border-left: 10px solid #63e3a5;
+    border-right: 1px solid #c6c9ce;
+    margin: 1.7em 0 1.7em 2.5em;
+    border-radius: 6px 6px 6px 6px;
+    background-color: #e6e6e6;
+    font-family: "Courier new", Courier, monospace, sans-serif;
+    font-size: 15;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+
+code {
+    font-family: "Courier new", Courier, monospace, sans-serif;
+    font-size: 15;
+    line-height: 1.2em;
+    text-align: left;
+    text-indent 5mm;
+}
+
+
+/* Custom Styles */
+
 .container {
 margin-left: auto;
 margin-right: auto;
 width: 96%;
 }
 
+.underConstructText {
+    text-align: center;
+    color: #66615f;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20;
+    line-height: 1.4;
+    padding-top: 2em;
+}
+
+.underConstructHead {
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, sans-serif;
+    text-shadow: 2px 2px #66615f;
+    color: #FF4500;
+    padding-top: 8em;
+}
+
+.underConstructBorder {
+    border: 6px solid #FF4500;
+}
+
+.codeHeader {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    font-size: 16;
+    font-style: italic;
+    font-family: cursive;
+    font-weight: bold;
+    height: 10px;
+    padding-right: 100%;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+}
+
+.codeHeader:hover {
+    height: 20px;
+    padding-bottom: 1em;
+    color: #000000;
+}
+
+.pythonHead {
+    content: "Python";
+    color: #63e3a5;
+    background-color: #63e3a5;
+    overflow: hidden;
+    padding-left: 0.3em;
+}
+
+.codeblock{
+
+}
+
+.python{
+
+}
+
+
+.block_Text {
+    width: 70%;
+    height: auto;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 14;
+    border-radius: 10px 10px 10px 10px;
+    padding: 0.4em 1.5em 0.4em 1.5em;
+    margin-left: 3em;
+    background-color: #dfdfdf;
+}
+
+.block_Shadow {
+    background-color: #dfdfdf;
+}
+
+.head_Section {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28;
+    font-weight: bold;
+    margin-left: 2em;
+    padding-bottom: 0.1em;
+    padding-top: 1em;
+}
+
+.head_Subhead {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14;
+    margin-left: 5em;
+    padding-bottom: 1em;
+    padding-top: 0.1em;
+}
+
+.style_Ghost {
+    font-style: italic;
+    font-weight: 100;
+    color: #7f7f7f;
+}
 
 
 /* common and top level styles */
@@ -167,105 +292,4 @@ display: block;
 display: block;
 width: auto;
 }
-}
-
-.codeHeader {
-    margin: 0;
-    padding: 0;
-    width: auto;
-    font-size: 16;
-    font-style: italic;
-    font-family: cursive;
-    font-weight: bold;
-    height: 10px;
-    padding-right: 100%;
-    transition: height 0.5s;
-    -webkit-transition: height 0.5s;
-}
-
-.codeHeader:hover {
-    height: 20px;
-    padding-bottom: 1em;
-    color: #000000;
-}
-
-.pythonHead {
-    content: "Python";
-    color: #63e3a5;
-    background-color: #63e3a5;
-    overflow: hidden;
-    padding-left: 0.3em;
-}
-
-.codeblock{
-
-}
-
-.python{
-
-}
-
-
-pre {
-    overflow-x: auto;
-    overflow-y: auto;
-    width: 50%;
-    height: 35%;
-    border-top: 1px solid #c6c9ce;
-    border-left: 10px solid #63e3a5;
-    border-right: 1px solid #c6c9ce;
-    margin: 1.7em 0 1.7em 2.5em;
-    border-radius: 6px 6px 6px 6px;
-    background-color: #e6e6e6;
-    font-family: "Courier new", Courier, monospace, sans-serif;
-    font-size: 15;
-    line-height: 1.2em;
-    text-align: left;
-}
-
-
-code {
-    font-family: "Courier new", Courier, monospace, sans-serif;
-    font-size: 15;
-    line-height: 1.2em;
-    text-align: left;
-    text-indent 5mm;
-}
-
-.block_Text {
-    width: 70%;
-    height: auto;
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 14;
-    border-radius: 10px 10px 10px 10px;
-    padding: 0.4em 1.5em 0.4em 1.5em;
-    margin-left: 3em;
-    background-color: #dfdfdf;
-}
-
-.block_Shadow {
-    background-color: #dfdfdf;
-}
-
-.head_Section {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 28;
-    font-weight: bold;
-    margin-left: 2em;
-    padding-bottom: 0.1em;
-    padding-top: 1em;
-}
-
-.head_Subhead {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14;
-    margin-left: 5em;
-    padding-bottom: 1em;
-    padding-top: 0.1em;
-}
-
-.style_Ghost {
-    font-style: italic;
-    font-weight: 100;
-    color: #7f7f7f;
 }
