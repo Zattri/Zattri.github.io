@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<script>
+    function makeTable() {
+        var but = document.createElement("BUTTON");
+        var butText = document.createTextNode("New Button");
+        but.appendChild(butText);
+        document.body.appendChild(but);
+    }
+
+    function setTitle() {
+        var title = document.createElement("TITLE");
+        var titleText = document.createTextNode("This is the title")
+        title.appendChild(titleText);
+        document.head.appendChild(title);
+    }
+
+    function makeText() {
+
+    }
+
+</script>
+
+
+<body>
+<button onclick="makeTable()">Make Table</button>
+<button onclick="setTitle()">Set Title</button>
+<button onclick="makeText()">Make textbox</button>
+</body>
+
+
+</html>
