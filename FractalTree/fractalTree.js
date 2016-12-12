@@ -4,7 +4,7 @@ function setup() {
   createCanvas(800, 640);
   angleSlider = createSlider(0, PI / 2, PI / 4, 0.02);
   baseSlider = createSlider(50, 250, 200, 10);
-  decaySlider = createSlider(0.3, 0.7, 0.6, 0.1);
+  decaySlider = createSlider(0.3, 0.7, 0.6, 0.05);
 }
 
 function draw() {
