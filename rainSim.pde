@@ -1,5 +1,6 @@
-// Rain drop - (78, 220, 202)
-// Background - (66, 105, 140)
+// Colours
+// Rain drop - (76, 131, 220)
+// Background - (198, 218, 215)
 
 // Initialising the drop array
 Drop[] drops = new Drop[300];
@@ -10,7 +11,7 @@ void setup() {
   for (int i = 0; i < drops.length; i++) {
     drops[i] = new Drop();
   }
-  
+
 }
 
 void draw() {
@@ -30,30 +31,29 @@ class Drop {
   float z = random(0, 20);
   float len = map(z, 0, 20, 10, 20);
   float ySpeed = map(z, 0, 20, 1, 8);
-  
-  
+
+
   void fall() {
     y = y + ySpeed;
     float grav = map (z, 0, 20, 0, 0.2);
     ySpeed = ySpeed + grav;
-    
+
     if (y > height) {
       y = random(-250, -50);
       x = random(width);
       ySpeed = map(z, 0, 20, 1, 8);
     }
-    
+
   }
 
   void show() {
     // Thickness of the drops is mapped to z value
-    float thickness = map(z, 0, 20, 1, 2.5);
+    float thickness = map(z, 0, 20, 1, 3);
     strokeWeight(thickness);
     // Rain colour
     stroke(76, 131, 220);
     line(x, y, x, y + len);
-    
+
   }
 
 }
-
