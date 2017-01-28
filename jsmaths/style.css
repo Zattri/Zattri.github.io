@@ -6,6 +6,7 @@
 }
 body {
     margin: 0 auto;
+    background-image: url("geometry2.png");
 }
 
 
@@ -14,8 +15,9 @@ body {
 }
 
 p {
-    font-size: 30;
+    font-size: 25;
     font-family: 'Lato', sans-serif;
+    color: grey;
 }
 
 body {
@@ -36,17 +38,19 @@ body {
 
 
 #equation {
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 60;
     font-family: 'Lato', sans-serif;
     margin-bottom: 5%;
     font-weight: 200;
+    visibility: hidden;
 }
 
 #instruction {
     font-family: 'Lato', sans-serif;
     font-size: 24;
     font-weight: lighter;
+    visibility: hidden;
 }
 
 #subhead {
@@ -61,7 +65,14 @@ body {
     font-style: italic;
     font-weight: bold;
     font-size: 18;
-    visibility: hidden;
     color: grey;
     margin-bottom: 5%;
+    visibility: hidden;
+}
+
+#difficulty {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 18;
+    color: grey;
 }
