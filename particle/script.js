@@ -18,11 +18,6 @@ var
     hueColour2 = 1, // Default Starting colour hue 2
     hueToneMod = 0; // Default Tone Modifier
 
-
-window.onLoad() {
-    startPage();
-}
-
 function startPage() {
     // Creates variables
     var canvas = document.createElement("Canvas"),
@@ -162,6 +157,8 @@ function refresh(){
     document.getElementById("particleAlphaValue").innerHTML = Math.round(particleAlpha.toString() * 100) + "%";
     document.getElementById("backgroundAlphaValue").innerHTML = Math.round(backgroundAlpha.toString() * 100) + "%";
 }
+
+window.onload = startPage;
 
 
     /*
