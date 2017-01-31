@@ -19,7 +19,9 @@ var
     hueToneMod = 0; // Default Tone Modifier
 
 
-
+window.onLoad() {
+    startPage();
+}
 
 function startPage() {
     // Creates variables
@@ -218,7 +220,3 @@ function refresh(){
 
     }, 30);
     */
-
-
-
-
