@@ -1,0 +1,13 @@
+Create Hex-code for each setting combined that can be used to restore the settings of a previous session
+- Link the Hex-code directly to each values of the sliders
+- Create a changable Hex-code box for input / output
+
+Multiple particle draw points
+- Number of draw points
+- Location sliders for draw points
+- Individual particle numbers for each point
+
+Mouse Control of the particle creation location
+- Particles Follows the mouse 
+  / Mouse clicks change location 
+  / Fire Particles from mouse
