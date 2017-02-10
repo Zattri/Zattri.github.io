@@ -93,13 +93,17 @@ function setFood() {
 function init(){
     grid.init(EMPTY, COLS, ROWS);
     if (score !== undefined){
+        if (highscore < score){
+            document.getElementById("highscore").innerHTML = "Highscore: " + score;
+            highscore = score;
+        }
         alert("Game Over - You scored: " + score + " points");
         document.getElementById("score").innerHTML= "Score: 0";
     }
     score = 0;
 
     // Define Start Point
-    var sp = {x:Math.floor(COLS/2), y:ROWS -1};
+    var sp = {x:Math.floor(COLS/2), y:ROWS -3};
     snake.init(UP, sp.x, sp.y);
     grid.set(SNAKE, sp.x, sp.y);
     setFood();
@@ -214,7 +218,7 @@ function startGame() {
 
 
 // Game Objects
-var canvas, context, keystate, frames, score;
+var canvas, context, keystate, frames, score, highscore;
 
 function main(){
     canvas = document.createElement("canvas");
@@ -226,6 +230,7 @@ function main(){
     context.font = "14px Verdana";
 
     frames = 0;
+    highscore = 0;
     keystate = {};
     document.addEventListener("keydown", function(evt) {
         keystate[evt.keyCode] = true;
