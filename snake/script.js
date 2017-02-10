@@ -94,7 +94,7 @@ function init(){
     grid.init(EMPTY, COLS, ROWS);
     if (score !== undefined){
         if (highscore < score){
-            document.getElementById("highscore").innerHTML = "Highscore: " + score;
+            document.getElementById("highscore").innerHTML = ("Highscore: " + score);
             highscore = score;
         }
         alert("Game Over - You scored: " + score + " points");
