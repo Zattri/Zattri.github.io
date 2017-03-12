@@ -221,6 +221,12 @@ function startGame() {
 var canvas, context, keystate, frames, score, highscore;
 
 function main(){
+    window.addEventListener("keydown", function(e) {
+        // space and arrow keys
+        if([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+            e.preventDefault();
+        }
+    }, false);
     canvas = document.createElement("canvas");
     canvas.width = COLS*20;
     canvas.height = ROWS*20;
