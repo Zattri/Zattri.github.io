@@ -36,6 +36,9 @@ body {
     margin-bottom: 2%;
 }
 
+.hidden {
+    visibility: hidden;
+}
 
 #equation {
     margin-top: 5%;
@@ -66,7 +69,7 @@ body {
     font-weight: bold;
     font-size: 18;
     color: grey;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     visibility: hidden;
 }
 
@@ -75,4 +78,10 @@ body {
     font-weight: bold;
     font-size: 18;
     color: grey;
+}
+
+#answer {
+    font-family: 'Lato', sans-serif;
+    font-size: 20;
+    margin-bottom: 3%;
 }

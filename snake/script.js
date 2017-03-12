@@ -98,7 +98,7 @@ function init(){
             highscore = score;
         }
         alert("Game Over - You scored: " + score + " points");
-        document.getElementById("score").innerHTML= "Score: 0";
+        document.getElementById("score").innerHTML = "Score: 0";
     }
     score = 0;
 
