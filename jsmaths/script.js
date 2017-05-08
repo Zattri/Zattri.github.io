@@ -118,4 +118,5 @@ function randSign() {
 
 window.onload = function() {
     dif = setDiff(2);
+    resetVis();
 }
