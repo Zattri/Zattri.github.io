@@ -72,6 +72,10 @@ function resetVis() {
     document.getElementById("equation").style.visibility = "visible";
     document.getElementById("instruction").style.visibility = "visible";
     document.getElementById("hint").style.visibility = "hidden";
+    document.getElementById("answer-correct").style.visibility = "hidden";
+    document.getElementById("answer-wrong").style.visibility = "hidden";
+    document.getElementById("answer-solution").style.visibility = "hidden";
+    document.getElementById("answer-info").style.visibility = "hidden";
 }
 
 // Gens random int - Can be negative | Includes 1
