@@ -78,6 +78,13 @@ function resetVis() {
     document.getElementById("answer-info").style.visibility = "hidden";
 }
 
+function hideAnswer() {
+    document.getElementById("answer-correct").style.visibility = "hidden";
+    document.getElementById("answer-wrong").style.visibility = "hidden";
+    document.getElementById("answer-solution").style.visibility = "hidden";
+    document.getElementById("answer-info").style.visibility = "hidden";
+}
+
 // Gens random int - Can be negative | Includes 1
 function randIntN() {
     var signInt = Math.floor((Math.random() * 4) + 1);
@@ -118,5 +125,5 @@ function randSign() {
 
 window.onload = function() {
     dif = setDiff(2);
-    resetVis();
+    hideAnswer();
 }
